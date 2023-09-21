@@ -1,0 +1,80 @@
+{
+  "name": "convert-text",
+  "displayName": "convert text",
+  "description": "Una extensión para Visual Studio Code que permite realizar transformaciones de texto en el código fuente.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "convert-text.pascalCase",
+        "title": "Pascal case"
+      },
+      {
+        "command": "convert-text.snakeCase",
+        "title": "Snake case"
+      },
+      {
+        "command": "convert-text.camelCase",
+        "title": "Camel case"
+      },
+      {
+        "command": "convert-text.constCase",
+        "title": "Const case"
+      },
+      {
+        "command": "convert-text.upperCase",
+        "title": "Upper case"
+      },
+      {
+        "command": "convert-text.lowerCase",
+        "title": "Lower case"
+      },
+      {
+        "command": "convert-text.capitalizeCase",
+        "title": "Capitalize case"
+      },
+      {
+        "command": "convert-text.titleCase",
+        "title": "Title case"
+      },
+      {
+        "command": "convert-text.slugCase",
+        "title": "Slug case"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "author": "henry",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuusuario/turepositorio"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.82.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "@vscode/test-electron": "^2.3.4",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.2.2"
+  }
+}

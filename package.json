@@ -2,7 +2,7 @@
   "name": "all-convert-text",
   "displayName": "All Convert text",
   "description": "Una extensión para Visual Studio Code que permite realizar transformaciones de texto en el código fuente.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "icon": "media/iconoir--text-box.png",
   "publisher": "00zkript",
   "engines": {

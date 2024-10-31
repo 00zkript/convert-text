@@ -1,6 +1,6 @@
 {
-  "name": "convert-text",
-  "displayName": "Convert text",
+  "name": "all-convert-text",
+  "displayName": "All Convert text",
   "description": "Una extensión para Visual Studio Code que permite realizar transformaciones de texto en el código fuente.",
   "version": "0.1.0",
   "icon": "media/iconoir--text-box.png",
@@ -12,54 +12,54 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:convertText.pascalCase",
-    "onCommand:convertText.snakeCase",
-    "onCommand:convertText.camelCase",
-    "onCommand:convertText.constCase",
-    "onCommand:convertText.upperCase",
-    "onCommand:convertText.lowerCase",
-    "onCommand:convertText.capitalizeCase",
-    "onCommand:convertText.titleCase",
-    "onCommand:convertText.slugCase"
+    "onCommand:allConvertText.pascalCase",
+    "onCommand:allConvertText.snakeCase",
+    "onCommand:allConvertText.camelCase",
+    "onCommand:allConvertText.constCase",
+    "onCommand:allConvertText.upperCase",
+    "onCommand:allConvertText.lowerCase",
+    "onCommand:allConvertText.capitalizeCase",
+    "onCommand:allConvertText.titleCase",
+    "onCommand:allConvertText.slugCase"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "convert-text.pascalCase",
-        "title": "Convert text: Pascal case"
+        "command": "all-convert-text.pascalCase",
+        "title": "All Convert text: Pascal case"
       },
       {
-        "command": "convert-text.snakeCase",
-        "title": "Convert text: Snake case"
+        "command": "all-convert-text.snakeCase",
+        "title": "All Convert text: Snake case"
       },
       {
-        "command": "convert-text.camelCase",
-        "title": "Convert text: Camel case"
+        "command": "all-convert-text.camelCase",
+        "title": "All Convert text: Camel case"
       },
       {
-        "command": "convert-text.constCase",
-        "title": "Convert text: Const case"
+        "command": "all-convert-text.constCase",
+        "title": "All Convert text: Const case"
       },
       {
-        "command": "convert-text.upperCase",
-        "title": "Convert text: Upper case"
+        "command": "all-convert-text.upperCase",
+        "title": "All Convert text: Upper case"
       },
       {
-        "command": "convert-text.lowerCase",
-        "title": "Convert text: Lower case"
+        "command": "all-convert-text.lowerCase",
+        "title": "All Convert text: Lower case"
       },
       {
-        "command": "convert-text.capitalizeCase",
-        "title": "Convert text: Capitalize case"
+        "command": "all-convert-text.capitalizeCase",
+        "title": "All Convert text: Capitalize case"
       },
       {
-        "command": "convert-text.titleCase",
-        "title": "Convert text: Title case"
+        "command": "all-convert-text.titleCase",
+        "title": "All Convert text: Title case"
       },
       {
-        "command": "convert-text.slugCase",
-        "title": "Convert text: Slug case"
+        "command": "all-convert-text.slugCase",
+        "title": "All Convert text: Slug case"
       }
     ]
   },

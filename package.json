@@ -1,53 +1,65 @@
 {
   "name": "convert-text",
-  "displayName": "convert text",
+  "displayName": "Convert text",
   "description": "Una extensión para Visual Studio Code que permite realizar transformaciones de texto en el código fuente.",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "icon": "media/iconoir--text-box.png",
+  "publisher": "00zkript",
   "engines": {
     "vscode": "^1.82.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:convertText.pascalCase",
+    "onCommand:convertText.snakeCase",
+    "onCommand:convertText.camelCase",
+    "onCommand:convertText.constCase",
+    "onCommand:convertText.upperCase",
+    "onCommand:convertText.lowerCase",
+    "onCommand:convertText.capitalizeCase",
+    "onCommand:convertText.titleCase",
+    "onCommand:convertText.slugCase"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "convert-text.pascalCase",
-        "title": "Pascal case"
+        "title": "Convert text: Pascal case"
       },
       {
         "command": "convert-text.snakeCase",
-        "title": "Snake case"
+        "title": "Convert text: Snake case"
       },
       {
         "command": "convert-text.camelCase",
-        "title": "Camel case"
+        "title": "Convert text: Camel case"
       },
       {
         "command": "convert-text.constCase",
-        "title": "Const case"
+        "title": "Convert text: Const case"
       },
       {
         "command": "convert-text.upperCase",
-        "title": "Upper case"
+        "title": "Convert text: Upper case"
       },
       {
         "command": "convert-text.lowerCase",
-        "title": "Lower case"
+        "title": "Convert text: Lower case"
       },
       {
         "command": "convert-text.capitalizeCase",
-        "title": "Capitalize case"
+        "title": "Convert text: Capitalize case"
       },
       {
         "command": "convert-text.titleCase",
-        "title": "Title case"
+        "title": "Convert text: Title case"
       },
       {
         "command": "convert-text.slugCase",
-        "title": "Slug case"
+        "title": "Convert text: Slug case"
       }
     ]
   },
@@ -59,10 +71,10 @@
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
   },
-  "author": "henry",
+  "author": "00zkript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tuusuario/turepositorio"
+    "url": "https://github.com/00zkript/convert-text"
   },
   "license": "MIT",
   "devDependencies": {

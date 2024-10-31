@@ -98,15 +98,15 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('result: '+selectedText.join(', '));
 	}); */
 
-	const disposablePascalCase = vscode.commands.registerCommand('convert-text.pascalCase', _ => replaceSelectedTexts( convertText.PASCAL_CASE_ID ) );
-	const disposableSnakeCase = vscode.commands.registerCommand('convert-text.snakeCase', _ => replaceSelectedTexts( convertText.SNAKE_CASE_ID ) );
-	const disposableCamelCase = vscode.commands.registerCommand('convert-text.camelCase', _ => replaceSelectedTexts( convertText.CAMEL_CASE_ID ) );
-	const disposableConstCase = vscode.commands.registerCommand('convert-text.constCase', _ => replaceSelectedTexts( convertText.CONST_CASE_ID ) );
-	const disposableUpperCase = vscode.commands.registerCommand('convert-text.upperCase', _ => replaceSelectedTexts( convertText.UPPER_CASE_ID ) );
-	const disposableLowerCase = vscode.commands.registerCommand('convert-text.lowerCase', _ => replaceSelectedTexts( convertText.LOWER_CASE_ID ) );
-	const disposableCapitalizeCase = vscode.commands.registerCommand('convert-text.capitalizeCase', _ => replaceSelectedTexts( convertText.CAPITALIZE_CASE_ID ) );
-	const disposableTitleCase = vscode.commands.registerCommand('convert-text.titleCase', _ => replaceSelectedTexts( convertText.TITLE_CASE_ID ) );
-	const disposableSlugCase = vscode.commands.registerCommand('convert-text.slugCase', _ => replaceSelectedTexts( convertText.SLUG_CASE_ID ) );
+	const disposablePascalCase = vscode.commands.registerCommand('all-convert-text.pascalCase', _ => replaceSelectedTexts( convertText.PASCAL_CASE_ID ) );
+	const disposableSnakeCase = vscode.commands.registerCommand('all-convert-text.snakeCase', _ => replaceSelectedTexts( convertText.SNAKE_CASE_ID ) );
+	const disposableCamelCase = vscode.commands.registerCommand('all-convert-text.camelCase', _ => replaceSelectedTexts( convertText.CAMEL_CASE_ID ) );
+	const disposableConstCase = vscode.commands.registerCommand('all-convert-text.constCase', _ => replaceSelectedTexts( convertText.CONST_CASE_ID ) );
+	const disposableUpperCase = vscode.commands.registerCommand('all-convert-text.upperCase', _ => replaceSelectedTexts( convertText.UPPER_CASE_ID ) );
+	const disposableLowerCase = vscode.commands.registerCommand('all-convert-text.lowerCase', _ => replaceSelectedTexts( convertText.LOWER_CASE_ID ) );
+	const disposableCapitalizeCase = vscode.commands.registerCommand('all-convert-text.capitalizeCase', _ => replaceSelectedTexts( convertText.CAPITALIZE_CASE_ID ) );
+	const disposableTitleCase = vscode.commands.registerCommand('all-convert-text.titleCase', _ => replaceSelectedTexts( convertText.TITLE_CASE_ID ) );
+	const disposableSlugCase = vscode.commands.registerCommand('all-convert-text.slugCase', _ => replaceSelectedTexts( convertText.SLUG_CASE_ID ) );
 
 
 	context.subscriptions.push(disposablePascalCase);
